@@ -1,0 +1,42 @@
+{
+    "name": "apatis/session",
+    "description": "Easy Session Management",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "callable",
+        "function"
+    ],
+    "authors": [
+        {
+            "name": "nawa",
+            "email": "nawa@yahoo.com",
+            "role": "developer"
+        },
+        {
+            "name": "pentagonal",
+            "email": "org@pentagonal.org",
+            "role": "developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.6",
+        "apatis/exceptions": "^1",
+        "apatis/core-intercept": "^1",
+        "apatis/array-storage": "^1"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "2.*",
+        "phpunit/phpunit": "^5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Apatis\\Session\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Apatis\\Session\\Tests\\": "Tests/"
+        }
+    }
+}

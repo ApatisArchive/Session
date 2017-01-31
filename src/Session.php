@@ -369,7 +369,7 @@ class Session
     public function setDeleteCookieInstance($deleteCookieInstance)
     {
         if ($deleteCookieInstance && !is_callable($deleteCookieInstance)) {
-            throw new \InvalidArgumentException(
+            throw new InvalidArgumentException(
                 "Delete Cookie instance must be callable",
                 E_USER_ERROR
             );
@@ -385,7 +385,7 @@ class Session
             ) use (
                 $intercept,
                 $default_params
-) {
+            ) {
                 // merge default
                 $params = array_merge($default_params, $params);
                 // call delete cookie
